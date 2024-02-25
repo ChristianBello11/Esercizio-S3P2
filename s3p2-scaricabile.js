@@ -23,13 +23,22 @@
 
 
 //ES.7
-/*function Cambiotitolo() {
-    var cambio = document.getElementById("titolo")
-    cambio.textContent = "MyBroPaperino";
+
+let cambio = false
+
+function Cambiotitolo() {
+    var button = document.getElementsByClassName("bottone")[0];
+    cambio = !cambio;
+    if (cambio) {
+        button.textContent = "MyBroPaperino";    
+    } else {
+        button.textContent = "Modalità Scura";
+    }
+
 }
-*/
 
 //ES.8
+
 let body = document.body
 let modalitaScuro = false
 
@@ -51,10 +60,8 @@ function toggleScuro() {
             element.style.color = "#000000";
         }
     });
+
 }
-
-
-//ES.9 Non ho capito cosa devo fare
 
 
 

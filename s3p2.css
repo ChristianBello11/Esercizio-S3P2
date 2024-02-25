@@ -3,6 +3,8 @@ body, html {
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -61,13 +63,17 @@ header{
     overflow: hidden;
 }
 
+.smartphones a{
+    width:60%;
+    height:100%;
+}
+
 .contenitore{
-    width: 60%;
+    width: 100%;
     height:400px;
     display: flex;
     align-items: center;
     box-shadow: 5px 5px 10px rgb(219, 219, 219);
-    margin-left: 20%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -120,3 +126,19 @@ header{
     text-decoration: none;
     color: #000;
 }
+
+/*COMMENTO*/
+
+#commenti{
+    width:20%;
+    height: 80px;
+    margin-bottom: 200px;
+    margin-top: 60px;
+    align-self: center;
+    border-radius: 10px;
+    border: 2px solid rgb(85, 85, 85);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
